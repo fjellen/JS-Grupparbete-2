@@ -1,0 +1,38 @@
+Frågor:
+1.  Om man använder inspektionsverktyget i webbläsaren och tittar under console så kan vi se en GET request 
+    som antingen gått igenom eller ej. 
+    Har det lyckats står det fetch finished loading, annars står det fetch failed loading.
+
+2. Man kan använda debugger som använder breakpoints, då stannar koden på olika ställen i koden så att man kan se om tex. variabler och funktioner körs.
+   Ett annat sätt är att köra sin kod med console.log() och se efter i konsollen om koden svarar.
+
+Uppgift:
+
+● Det skall finnas två input-fält, ett för artistnamnet och ett för låttiteln.
+● Det skall finnas en knapp
+● När användaren trycker på knappen så skall texten för låten hämtas från API:et och
+visas på skärmen i en textarea som skapas av Javascript-koden.
+● Om användaren inte skrivit in något i antingen artistnamns-fältet eller låttitel-fältet så
+skall knappen inte gå att trycka på och användaren skall se ett felmeddelande.
+
+Rapport:
+
+Jag skapade ett nytt projekt och skapade en index.html, main.js och en style.css
+Jag öppnade min index.html och länkade in min css och javascript fil.
+Jag skapade en layout med höger/vänster sida av skärmen och la in ett formulär med två inputs och en knapp på min första div, jag satt även id på min knapp.
+På min andra div så la jag bara en klass och id som jag kan använda senare.
+
+I min style.css så fixade jag så min sida delas på hälften och min vänstra sida centreras med både justify-content och align-items.
+
+Jag började med min javascript. Vi hade fått en ny API av Sebastian, den kollade vi gemensamt på under lektions tid, så jag sparade den och döpte den till musicAPI.js.
+I min main.js så hämtade jag alla ID:n med .getElementsById, samt att jag la in eventlisteners på tangenter och "click".
+Jag skapade en funktion som skulle visa ett felmedelande, myError=document.createElement("p"); och la in den i min main.js
+Jag satte min button som disabled och med en if sats där jag måste skriva in något i båda mina input-fält annars förbli knappen disabled.
+Jag gjorde en function som tar bort min gamla text ifrån input-fälten när jag har sökt genom att använda 
+.querySelectorAll('p').forEach(n => n.remove()); 
+.querySelectorAll('textarea').forEach(n => n.remove());
+.querySelectorAll('h2').forEach(n => n.remove());
+
+
+
+
