@@ -32,7 +32,8 @@ Jag gjorde en function som tar bort min gamla text ifrån input-fälten när jag
 .querySelectorAll('p').forEach(n => n.remove()); 
 .querySelectorAll('textarea').forEach(n => n.remove());
 .querySelectorAll('h2').forEach(n => n.remove());
-
+Nu är sidan klar, jag kan söka efter olika lyrics och får upp ett felmedelande om jag inte har skrivit i båda input-fälten.
+Nu kan jag bara styla lite i min css.
 
 
 
